@@ -1,0 +1,5 @@
+<% form_with url: user_path do |form| %>
+  <% form.name_field :name, required: true, autofocus: true, placeholder: "Name" %>
+  <% form.email_field :email_address, required: true, placeholder: "Email Address" %>
+  <% form.password_field :password, required: true, placeholder: "password" %>
+<% end %>
