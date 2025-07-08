@@ -1,9 +1,9 @@
 <%= tag.div(flash[:alert], style: "color:red") if flash[:alert] %>
 <%= tag.div(flash[:notice], style: "color:green") if flash[:notice] %>
 
-<% form_with url: user_path do |form| %>
-  <% form.name_field :name, required: true, autofocus: true, placeholder: "Name" %>
-  <% form.email_field :email_address, required: true, placeholder: "Email Address" %>
-  <% form.password_field :password, required: true, placeholder: "password" %>
-  <%= form.submit "Sign up" %>
-<% end %>
+<%# form_with url: user_path do |form| %>
+  <%# form.name_field :name, required: true, autofocus: true, placeholder: "Name" %>
+  <%# form.email_field :email_address, required: true, placeholder: "Email Address" %>
+  <%# form.password_field :password, required: true, placeholder: "password" %>
+  <%#= form.submit "Sign up" %>
+<%# end %>
