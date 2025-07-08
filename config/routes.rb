@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resource :session
+  resources :sessions, :users
   resources :passwords, param: :token
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "users#index"
-  get "login" => "sessions#create", as: :login
-  get "user/new" => "users#new"
+  get "/sessions" => "sessions#new", as: :login
+  post "/sessions" => "sessions#create"
+
 end
