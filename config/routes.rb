@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get "/home" => "pages#home"
+  get "/about" => "pages#about"
+  get "/my_books" => "pages#my_books"
+  get "/my_reviews" => "pages#my_reviews"
   resources :sessions, :users
   resources :passwords, param: :token
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -12,7 +16,7 @@ Rails.application.routes.draw do
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
   # Defines the root path route ("/")
-  root "users#index"
+  root "pages#home"
   get "/sessions" => "sessions#new", as: :login
   post "/sessions" => "sessions#create"
 

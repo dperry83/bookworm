@@ -1,0 +1,16 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    padding-left: 15px;
+}
+.navigation {
+    padding-right: 15px;
+}
+.navigation > * {
+    margin-left: 15px;
+    margin-right: 15px;
+}
