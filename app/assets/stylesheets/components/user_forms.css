@@ -1,0 +1,16 @@
+.user-form {
+    float: right;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.login-button {
+    float: inherit;
+}
+/*.login-form {*/
+/*    display: block;*/
+/*    margin-top: auto;*/
+/*    margin-right: auto;*/
+/*}*/
