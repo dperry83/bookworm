@@ -7,7 +7,7 @@ class PagesController < ApplicationController
   end
 
   def my_books
-    @current_user = current_user
+    # @current_user = current_user
   end
 
   def my_reviews
