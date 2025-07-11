@@ -10,15 +10,21 @@ User.create(
   [
     {
       email_address: "david@mail.com",
-      password: "password"
+      password: "password",
+      first_name: "David",
+      last_name: "Perry"
     },
     {
       email_address: "adam@mail.com",
-      password: "password"
+      password: "password",
+      first_name: "Adam",
+      last_name: "Perry"
     },
     {
       email_address: "ryan@mail.com",
-      password: "password"
+      password: "password",
+      first_name: "Ryan",
+      last_name: "Perry"
     }
   ]
 )

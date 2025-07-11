@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get "/home" => "pages#home"
   get "/about" => "pages#about"
-  get "/my_books" => "pages#my_books"
+  get "/my_books" => "pages#my_books", as: :my_books
   get "/my_reviews" => "pages#my_reviews"
   resources :sessions, :users
   resources :passwords, param: :token
@@ -19,5 +19,6 @@ Rails.application.routes.draw do
   root "pages#home"
   get "/sessions" => "sessions#new", as: :login
   post "/sessions" => "sessions#create"
+  delete "/logout" => "sessions#destroy", as: :logout
 
 end

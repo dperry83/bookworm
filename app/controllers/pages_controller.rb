@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  skip_before_action :require_authentication, only: [ :home, :about ]
   def home
   end
 
@@ -6,6 +7,7 @@ class PagesController < ApplicationController
   end
 
   def my_books
+    @current_user = current_user
   end
 
   def my_reviews
