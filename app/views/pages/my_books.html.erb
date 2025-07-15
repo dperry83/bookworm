@@ -1,3 +1,7 @@
-<h1>Pages#my_books</h1>
+<!--<h1>Pages#my_books</h1>-->
 
-<h2>Welcome, <%= @current_user.first_name %></h2>
+<% if current_user %>
+  <h2>Welcome, <%= current_user.first_name %>! </h2>
+<% else %>
+  <p>Please log in</p>
+<% end %>

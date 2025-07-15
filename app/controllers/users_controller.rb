@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-  allow_unauthenticated_access only: %i[ create ]
+  allow_unauthenticated_access only: %i[ new create index ]
+
 
   def index
     @users = User.all
